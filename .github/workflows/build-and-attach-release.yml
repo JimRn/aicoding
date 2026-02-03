@@ -12,6 +12,8 @@ jobs:
   build:
     name: Build and upload
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     steps:
       - name: Checkout
