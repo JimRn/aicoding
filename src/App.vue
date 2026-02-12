@@ -22,6 +22,10 @@
           <p>运行 <code>npm install</code> 后执行 <code>npm run dev</code> 查看效果。</p>
         </div>
       </section>
+
+      <section class="ai-section">
+        <AIAgentProducts />
+      </section>
     </main>
 
     <footer class="site-footer">
@@ -32,10 +36,11 @@
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import AIAgentProducts from './components/AIAgentProducts.vue'
 
 export default {
   name: 'App',
-  components: { HelloWorld }
+  components: { HelloWorld, AIAgentProducts }
 }
 </script>
 
@@ -50,6 +55,7 @@ export default {
 .cards { display: grid; grid-template-columns: repeat(auto-fit,minmax(260px,1fr)); gap: 1rem; }
 .card { background: white; border-radius: 8px; padding: 1rem; box-shadow: 0 6px 18px rgba(16,24,40,0.06); }
 .card.muted { background: #f8fafc; color: #0f172a; }
+.ai-section { margin-top: 2rem; }
 .site-footer { text-align: center; padding: 1rem 0; color: #94a3b8; }
 
 code { background: #0f172a0d; padding: 0.15rem 0.4rem; border-radius: 4px; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", "Helvetica Neue", monospace; }
